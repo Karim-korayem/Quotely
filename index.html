@@ -8,32 +8,47 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+     <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap"
+      rel="stylesheet"
+    />
+    <!-- end of fonts -->
   </head>
   <body>
     <div class="backimg">
+      <!-- navbar heading -->
       <nav class="navbar bg-transparent">
         <div class="container-fluid">
           <h1><i class="fa-solid fa-quote-left"></i> Quotely</h1>
         </div>
       </nav>
+      <!-- end of navbar -->
       <div class="container">
         <div class="text-center p-5 rounded-5">
-          <h2 class="font-change">
+          <h2 class="caprasimo">
             <i class="fa-solid fa-heart-circle-bolt"></i>
             Quote of the Day
           </h2>
           <div
             class="quotes-content text-center justify-content-center align-content-center"
           >
-            <p class="text-white m-0 font-change-2" id="quote"></p>
-            <p class="text-white mb-1 font-change-2" id="author"></p>
+            <p
+              class="my-Quotes text-white savate justify-content-between align-content-center"
+              id="quote"
+            ></p>
+            <p class="author-name text-white mb-1 savate" id="author"></p>
           </div>
 
-          <p class="press-button mb-2 text-white font-change text-outline">
+          <p class="press-button mb-2 text-white caprasimo text-outline">
             Press the button below to recieve a random quote!
           </p>
           <button
-            class="font-change btn btn-warning p-lg-4 mb-4"
+            class="caprasimo btn btn-primary p-lg-4 mb-4"
             onclick="getQuotes()"
           >
             New Quote

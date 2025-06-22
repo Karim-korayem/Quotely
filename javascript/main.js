@@ -1,3 +1,4 @@
+// array of quotes
 var quotes = [
   {
     quote: "Be yourself; everyone else is already taken.",
@@ -53,7 +54,7 @@ var quotes = [
   },
   {
     quote:
-      "Don’t walk in front of me… I may not follow\nDon’t walk behind me… I may not lead\nWalk beside me… just be my friend",
+      "Don’t walk in front of me I may not follow Don’t walk behind me I may not lead\nWalk beside me just be my friend",
     author: "--Albert Camus",
   },
   {
@@ -62,12 +63,12 @@ var quotes = [
   },
   {
     quote:
-      "I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
+      "I've learned that people will forget what you said, people will forget what you did",
     author: "--Maya Angelou",
   },
   {
     quote:
-      'Friendship ... is born at the moment when one man says to another "What! You too? I thought that no one but myself . . ."',
+      'Friendship is born at the moment when one man says to another "What! You too? I thought that no one but myself" ',
     author: "--C.S. Lewis",
   },
   {
@@ -84,8 +85,7 @@ var quotes = [
     author: "--Oscar Wilde",
   },
   {
-    quote:
-      " Hate cannot drive out hate: only love can do that.",
+    quote: " Hate cannot drive out hate: only love can do that.",
     author: "--Martin Luther King Jr.",
   },
   {
@@ -123,11 +123,9 @@ var quotes = [
   },
 ];
 
+// function to generate quotes and author's name
 function getQuotes() {
   var num = Math.floor(Math.random() * quotes.length);
-  
   document.getElementById("quote").innerHTML = quotes[num].quote;
   document.getElementById("author").innerHTML = quotes[num].author;
 }
-
-

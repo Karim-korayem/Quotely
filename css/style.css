@@ -1,45 +1,64 @@
+/* global styling */
 body {
   text-transform: capitalize;
 }
-
 h1 {
   font-size: 40px;
   font-family: Impact;
   padding-bottom: 20px;
-  color: #ffd8d8;
+  color: #b8c6db;
 }
 h2 {
   font-size: 35px;
   font-weight: 500;
   font-style: italic;
-  color: #b3146e;
+  color: #ed3500;
 }
 p {
   font-size: 35px;
 }
+/* end of global styling */
+
+/* start of styling */
 .backimg {
   background-image: url(../images/pexels-pixabay-531880.jpg);
   height: 100vh;
   background-size: 100% 100%;
   background-size: cover;
 }
+.my-Quotes {
+  height: 150px;
+}
 
 .rounded-5 {
   background-color: rgba(0, 0, 0, 0.2);
+  height: 510.6px;
 }
 .font-change {
   font-family: fantasy;
 }
-.font-change-2 {
-  font-family: "Trebuchet MS", sans-serif;
+.press-button {
+  font-size: 30px;
+}
+.savate {
+  font-family: "Savate", sans-serif;
+  font-optical-sizing: auto;
+}
+.caprasimo {
+  font-family: "Caprasimo", serif;
+  font-style: normal;
 }
 .text-outline {
-  text-shadow: -1px -1px 0 #8d0b41, 0 -1px 0 #8d0b41, 1px -1px 0 #8d0b41,
-    -1px 0 0 #8d0b41, 1px 0 0 #8d0b41, -1px 1px 0 #8d0b41, 0 1px 0 #8d0b41,
-    1px 1px 0 #8d0b41, -2px -2px 0 #8d0b41, 2px -2px 0 #8d0b41,
-    -2px 2px 0 #8d0b41, 2px 2px 0 #8d0b41;
+  color: #adb5bd;
+  text-shadow: -1px -1px 0 #339af0, 0 -1px 0 #339af0, 1px -1px 0 #339af0,
+    -1px 0 0 #339af0, 1px 0 0 #339af0, -1px 1px 0 #339af0, 0 1px 0 #339af0,
+    1px 1px 0 #339af0, -2px -2px 0 #339af0, 2px -2px 0 #339af0,
+    -2px 2px 0 #339af0, 2px 2px 0 #339af0;
 }
-@media (max-width: 480px) {
+/* end of styling */
+
+/* media queries */
+@media (max-width: 768px) {
   .navbar {
     padding-bottom: 4px;
   }
@@ -47,9 +66,16 @@ p {
     padding-bottom: 10px;
   }
   .quotes-content p {
-    font-size: 27px;
+    font-size: 22px;
   }
   .press-button {
     font-size: 20px;
   }
+  h2 {
+    font-size: 28px;
+  }
+  .btn {
+    margin-top: 24px;
+  }
 }
+/* end of media queries */
