@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quotely</title>
+    <link rel="shortcut icon" href="images/quotes.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="backimg">
+      <nav class="navbar bg-transparent">
+        <div class="container-fluid">
+          <h1><i class="fa-solid fa-quote-left"></i> Quotely</h1>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="text-center p-5 rounded-5">
+          <h2 class="font-change">
+            <i class="fa-solid fa-heart-circle-bolt"></i>
+            Quote of the Day
+          </h2>
+          <div
+            class="quotes-content text-center justify-content-center align-content-center"
+          >
+            <p class="text-white m-0 font-change-2" id="quote"></p>
+            <p class="text-white mb-1 font-change-2" id="author"></p>
+          </div>
+
+          <p class="press-button mb-2 text-white font-change text-outline">
+            Press the button below to recieve a random quote!
+          </p>
+          <button
+            class="font-change btn btn-warning p-lg-4 mb-4"
+            onclick="getQuotes()"
+          >
+            New Quote
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="css/bootstrap.min.css"></script>
+    <script src="javascript/main.js"></script>
+  </body>
+</html>
