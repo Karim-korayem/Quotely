@@ -68,7 +68,7 @@ var quotes = [
   },
   {
     quote:
-      'Friendship is born at the moment when one man says to another "What! You too? I thought that no one but myself" ',
+      'Friendship is born at the moment when one man says to another "What! You too? I thought that no one but myself ',
     author: "--C.S. Lewis",
   },
   {
@@ -124,8 +124,14 @@ var quotes = [
 ];
 
 // function to generate quotes and author's name
+
+var LastQuote;
 function getQuotes() {
-  var num = Math.floor(Math.random() * quotes.length);
+  var num;
+  do {
+    num = Math.floor(Math.random() * quotes.length);
+  } while (num === LastQuote);
+  LastQuote = num;
   document.getElementById("quote").innerHTML = quotes[num].quote;
   document.getElementById("author").innerHTML = quotes[num].author;
 }

@@ -34,9 +34,6 @@ p {
   background-color: rgba(0, 0, 0, 0.2);
   height: 510.6px;
 }
-.font-change {
-  font-family: fantasy;
-}
 .press-button {
   font-size: 30px;
 }
@@ -49,11 +46,16 @@ p {
   font-style: normal;
 }
 .text-outline {
-  color: #adb5bd;
   text-shadow: -1px -1px 0 #339af0, 0 -1px 0 #339af0, 1px -1px 0 #339af0,
     -1px 0 0 #339af0, 1px 0 0 #339af0, -1px 1px 0 #339af0, 0 1px 0 #339af0,
     1px 1px 0 #339af0, -2px -2px 0 #339af0, 2px -2px 0 #339af0,
     -2px 2px 0 #339af0, 2px 2px 0 #339af0;
+}
+.text-outline2 {
+  text-shadow: -1px -1px 0 black, 0 -1px 0 black, 1px -1px 0 black,
+    -1px 0 0 black, 1px 0 0 black, -1px 1px 0 black, 0 1px 0 black,
+    1px 1px 0 black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    2px 2px 0 black;
 }
 /* end of styling */
 
